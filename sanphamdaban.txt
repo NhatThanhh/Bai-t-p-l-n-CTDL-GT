@@ -1,0 +1,10 @@
+Tra sua khoai mon,2,28000
+Tra sua thai xanh,2,15000
+Tra nhiet doi,2,20000
+Tra sua truyen thong,10,250000
+Tra dao,12,120000
+Tra vai,2,25000
+Tra dau,3,20000
+Tra vai,2,25000
+Tra chanh,3,20000
+Trinh to nu,2,19000
