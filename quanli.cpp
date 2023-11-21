@@ -548,7 +548,7 @@ void SearchPrice(List *l){
     }
     int Count = 0;
     string cost;
-    float price;
+    int price;
     cout << "Nhap gia san pham ban muon tim: ";
     do{
         cin >> cost;
@@ -557,7 +557,7 @@ void SearchPrice(List *l){
                 cout << "Gia khong hop le! Vui long nhap lai: ";
                 break;
             }else{
-                price = stof(cost);
+                price = stoi(cost);
                 for (Node *i = l->head; i != NULL; i = i->next) {
                     if (price == i->data.price1 || price == i->data.price2 || price == i->data.price3){
                         Count++;
@@ -779,8 +779,8 @@ void XuatBill(){
     cout << setw(74) << "Cam on quy khach. hen gap lai !" << endl;
 
     fs2.close();
-//    fs2.open("hoadon.txt", ios::out | ios::trunc);
-//    fs2.close();
+    fs2.open("hoadon.txt", ios::out | ios::trunc);
+    fs2.close();
 }
 struct temp {
     string ten;
@@ -870,8 +870,8 @@ void DoanhThu(List* l) {
     cout << setw(30) << " " << "Duoc tinh vao ngay: " << put_time(localTime, "%d/%m/%Y") << ", luc " << put_time(localTime, "%H:%M:%S") << endl;
     SET_COLOR(7);
     fs3.close();
-    //fs3.open("sanphamdaban.txt", ios::out | ios::trunc);
-    //fs3.close();
+    fs3.open("sanphamdaban.txt", ios::out | ios::trunc);
+    fs3.close();
 }
 
  void Menu(List* l) {
